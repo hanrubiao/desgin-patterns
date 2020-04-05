@@ -1,7 +1,6 @@
 package anytxn.jrx.trick.stratege.service.impl;
 
 import anytxn.jrx.trick.stratege.service.Duck;
-import anytxn.jrx.trick.stratege.service.FlyBehavior;
 
 /**
  * @ClassName DuckImpl.java
@@ -11,7 +10,6 @@ import anytxn.jrx.trick.stratege.service.FlyBehavior;
  * @CreateTime 2020年04月05日 21:25:00
  */
 public class MallardDuck extends Duck {
-    private FlyBehavior flyBehavior;
 
     public MallardDuck() {
         flyBehavior = new FlyWithWings();

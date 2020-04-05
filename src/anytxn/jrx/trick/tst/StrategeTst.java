@@ -1,6 +1,7 @@
 package anytxn.jrx.trick.tst;
 
 import anytxn.jrx.trick.stratege.service.Duck;
+import anytxn.jrx.trick.stratege.service.impl.FlyNoWay;
 import anytxn.jrx.trick.stratege.service.impl.MallardDuck;
 import anytxn.jrx.trick.stratege.service.impl.RedHeadDuck;
 
@@ -16,6 +17,8 @@ public class StrategeTst {
     public static void main(String[] args) {
         //绿头鸭
         Duck mallardDuck = new MallardDuck();
+        //改变行为
+        mallardDuck.setFlyBehavior(new FlyNoWay());
         mallardDuck.perform();
 
         //绿头鸭
