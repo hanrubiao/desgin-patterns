@@ -17,6 +17,8 @@ public class StrategeTst {
     public static void main(String[] args) {
         //绿头鸭
         Duck mallardDuck = new MallardDuck();
+        mallardDuck.perform();
+
         //改变行为
         mallardDuck.setFlyBehavior(new FlyNoWay());
         mallardDuck.perform();
@@ -24,6 +26,8 @@ public class StrategeTst {
         //绿头鸭
         Duck redHeadDuck = new RedHeadDuck();
         redHeadDuck.perform();
+
+        //委托不一样的行为去执行 生成不一样的结果
 
     }
 }
