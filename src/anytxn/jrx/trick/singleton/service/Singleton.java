@@ -1,4 +1,4 @@
-package anytxn.jtx.trick.singleton.service;
+package anytxn.jrx.trick.singleton.service;
 
 /**
  * @ClassName Singleton.java
