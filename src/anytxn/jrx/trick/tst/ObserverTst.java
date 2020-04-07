@@ -1,6 +1,5 @@
 package anytxn.jrx.trick.tst;
 
-import anytxn.jrx.trick.observe.service.Observer;
 import anytxn.jrx.trick.observe.service.impl.ObserverImpl;
 import anytxn.jrx.trick.observe.service.impl.SubjectImpl;
 
@@ -15,9 +14,10 @@ public class ObserverTst {
 
     public static void main(String[] args) {
         SubjectImpl subject = new SubjectImpl();
-        Observer observer = new ObserverImpl(subject);
-        Observer observer1 = new ObserverImpl(subject);
-        Observer observer2 = new ObserverImpl(subject);
+        //创建3个观察者
+        new ObserverImpl(subject);
+        new ObserverImpl(subject);
+        new ObserverImpl(subject);
         //改变消息内容
         subject.setMsg("观察者模式发送消息");
     }
